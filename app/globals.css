@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --primary-dark-green: #1a3a2e;
+  --primary-green: #2d5a47;
+  --medium-green: #4a7c59;
+  --light-green: #a8d5ba;
+  --accent-lime: #d4f4dd;
+  --cream-bg: #f5f3ed;
+  --white: #ffffff;
+  --text-dark: #1a1a1a;
+  --text-light: #666666;
+}
+
+@theme inline {
+  --color-primary-dark-green: var(--primary-dark-green);
+  --color-primary-green: var(--primary-green);
+  --color-medium-green: var(--medium-green);
+  --color-light-green: var(--light-green);
+  --color-accent-lime: var(--accent-lime);
+  --color-cream-bg: var(--cream-bg);
+  --color-text-dark: var(--text-dark);
+  --color-text-light: var(--text-light);
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream-bg);
+  color: var(--text-dark);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Custom utility classes */
+.glassmorphism {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glassmorphism-dark {
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
